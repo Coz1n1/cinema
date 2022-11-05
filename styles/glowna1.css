@@ -1,0 +1,85 @@
+body {
+    background-image: url(../assets/tlo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: black;
+    font-family: 'Open Sans';
+}
+
+.przycisk {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 150px;
+    line-height: 40px;
+    display: inline-block;
+    font-family: Arial;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 40px;
+    font-size: 12pt;
+    margin: 2px;
+}
+
+.przycisk:hover {
+    background-color: yellow;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.przycisk:before {
+    content: "";
+    background-color: rgba(255, 255, 255);
+    height: 100%;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: skewX(-45deg) translateX(0px);
+    transition: none;
+}
+
+.przycisk:hover:before {
+    transform: skewX(-45deg) translateX(250px);
+    transition: all 0.4s ease-in;
+}
+
+.zdjecie {
+    width: 400px;
+    height: 550px;
+    transition: 0.3s
+}
+
+.calosc {
+    border: 5px solid black;
+    margin: 20px;
+    width: 400px;
+    height: 750px;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0.7;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.calosc:hover {
+    opacity: 1;
+    width: 450px;
+    height: 850px;
+}
+
+.calosc:hover>img {
+    opacity: 1;
+    width: 450px;
+    height: 650px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

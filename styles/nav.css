@@ -1,0 +1,12 @@
+.follow {
+    width: 8rem;
+    height: 2rem;
+    background-color: azure;
+    font-family: Arial;
+}
+
+.p-follow {
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+}

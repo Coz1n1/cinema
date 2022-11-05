@@ -1,0 +1,116 @@
+body {
+    background-image: url(../assets/tlo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: black;
+    font-family: 'Open Sans';
+    font-size: 20pt;
+}
+
+
+
+.sala {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.przycisk {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 150px;
+    line-height: 40px;
+    display: inline-block;
+    font-family: Arial;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    font-size: 10pt;
+    margin: 2px;
+}
+
+.przycisk:hover {
+    background-color: #21B466;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.przycisk:before {
+    content: "";
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: skewX(-45deg) translateX(0px);
+    transition: none;
+}
+
+.przycisk:hover:before {
+    transform: skewX(-45deg) translateX(250px);
+    transition: all 0.4s ease-in;
+}
+
+.przycisk2 {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    line-height: 40px;
+    display: inline-block;
+    font-family: Arial;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 40px;
+    font-size: 10pt;
+    margin: 2px;
+}
+
+.przycisk2:hover {
+    background-color: #E08681;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.przycisk2:before {
+    content: "";
+    background-color: red;
+    height: 100%;
+    width: 40px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    transform: skewX(-45deg) translateX(0px);
+    transition: none;
+}
+
+.przycisk2:hover:before {
+    transform: skewX(-45deg) translateX(250px);
+    transition: all 0.4s ease-in;
+}
+
+.ekran {
+    width: 55rem;
+    background-color: gray;
+    height: 2rem;
+    border: 2px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+}
+
+.nawigacja {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
